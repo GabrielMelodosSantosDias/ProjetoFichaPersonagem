@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ficha de Herói de Gabriel em estilo RPG, desenvolvida com HTML e CSS para a P1.">
+  <title>Gabriel.exe | Ficha de Herói</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo" id="inicio">
+    <a class="marca" href="#inicio" aria-label="Voltar ao início">
+      <span>GABRIEL.EXE</span>
+      <small>ATLETA • AVENTUREIRO • TECH</small>
+    </a>
+
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#atributos">Atributos</a>
+      <a href="#inventario">Inventário</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="pagina">
+    <section class="hero" aria-labelledby="titulo-heroi">
+      <div class="hero-texto">
+        <p class="tag">PLAYER 01 • LV 1</p>
+        <h1 id="titulo-heroi">GABRIEL</h1>
+        <p class="subtitulo">Atleta • Aventureiro • Tech</p>
+        <p class="intro">Uma ficha de personagem inspirada em RPG para representar minha vida real: tecnologia, esporte, disciplina e aventura.</p>
+        <a class="botao" href="#sobre">Ver ficha <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <section class="secao card" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="titulo-secao">
+        <i class="fa-solid fa-user"></i>
+        <h2 id="titulo-sobre">Sobre o Herói</h2>
+      </div>
+      <p>
+        Gabriel é apaixonado por tecnologia, esporte e novas experiências. Trabalha com T.I., cursa Engenharia da Computação,
+        pratica karatê e gosta de futebol, viagens, trilhas, praia e cachoeiras. Seu objetivo é continuar evoluindo tanto na área
+        tecnológica quanto nos desafios pessoais.
+      </p>
+      <div class="frase">“Disciplina cria liberdade.”</div>
+    </section>
+
+    <section class="secao card" id="atributos" aria-labelledby="titulo-atributos">
+      <div class="titulo-secao">
+        <i class="fa-solid fa-chart-simple"></i>
+        <h2 id="titulo-atributos">Atributos &amp; Habilidades</h2>
+      </div>
+
+      <div class="lista-atributos">
+        <div class="atributo">
+          <div class="atributo-topo"><span><i class="fa-solid fa-mountain-sun"></i> Aventura</span><strong>95</strong></div>
+          <div class="barra-atributo"><span style="width:95%"></span></div>
+        </div>
+        <div class="atributo">
+          <div class="atributo-topo"><span><i class="fa-solid fa-laptop-code"></i> Tecnologia</span><strong>95</strong></div>
+          <div class="barra-atributo"><span style="width:95%"></span></div>
+        </div>
+        <div class="atributo">
+          <div class="atributo-topo"><span><i class="fa-solid fa-medal"></i> Esporte</span><strong>90</strong></div>
+          <div class="barra-atributo"><span style="width:90%"></span></div>
+        </div>
+        <div class="atributo">
+          <div class="atributo-topo"><span><i class="fa-solid fa-shield-halved"></i> Disciplina</span><strong>90</strong></div>
+          <div class="barra-atributo"><span style="width:90%"></span></div>
+        </div>
+        <div class="atributo">
+          <div class="atributo-topo"><span><i class="fa-solid fa-bolt"></i> Determinação</span><strong>95</strong></div>
+          <div class="barra-atributo"><span style="width:95%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao card" id="inventario" aria-labelledby="titulo-inventario">
+      <div class="titulo-secao">
+        <i class="fa-solid fa-box-open"></i>
+        <h2 id="titulo-inventario">Inventário &amp; Conquistas</h2>
+      </div>
+
+      <h3>Inventário</h3>
+      <div class="grid-itens">
+        <article class="card-item destaque">
+          <i class="fa-solid fa-laptop"></i>
+          <h4>Notebook</h4>
+          <p>Ferramenta principal para trabalho, estudos e projetos.</p>
+          <span class="raridade">Raro</span>
+        </article>
+        <article class="card-item">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h4>Celular</h4>
+          <p>Comunicação e conexão com o mundo.</p>
+          <span class="raridade comum">Comum</span>
+        </article>
+        <article class="card-item">
+          <i class="fa-solid fa-backpack"></i>
+          <h4>Mochila</h4>
+          <p>Companheira de estudos, viagens e aventuras.</p>
+          <span class="raridade comum">Comum</span>
+        </article>
+        <article class="card-item">
+          <i class="fa-solid fa-compass"></i>
+          <h4>Bússola</h4>
+          <p>Representa trilhas, natureza e vontade de explorar.</p>
+          <span class="raridade">Raro</span>
+        </article>
+        <article class="card-item">
+          <i class="fa-solid fa-user-ninja"></i>
+          <h4>Faixa de Karatê</h4>
+          <p>Disciplina, treino e evolução constante.</p>
+          <span class="raridade lendario">Lendário</span>
+        </article>
+        <article class="card-item">
+          <i class="fa-solid fa-futbol"></i>
+          <h4>Bola de Futebol</h4>
+          <p>Paixão por futebol e espírito competitivo.</p>
+          <span class="raridade comum">Comum</span>
+        </article>
+      </div>
+
+      <h3 class="subsecao">Conquistas</h3>
+      <ul class="conquistas">
+        <li><i class="fa-solid fa-trophy"></i> Atleta de Karatê</li>
+        <li><i class="fa-solid fa-mountain"></i> Explorador da Natureza</li>
+        <li><i class="fa-solid fa-computer"></i> Profissional de T.I.</li>
+        <li><i class="fa-solid fa-graduation-cap"></i> Engenharia da Computação</li>
+      </ul>
+    </section>
+
+    <section class="secao card" id="contato" aria-labelledby="titulo-contato">
+      <div class="titulo-secao">
+        <i class="fa-solid fa-envelope"></i>
+        <h2 id="titulo-contato">Contato com a Guilda</h2>
+      </div>
+      <p>Quer trocar ideia sobre tecnologia, projetos, esporte ou aventura? Meu contato profissional está no LinkedIn.</p>
+      <div class="contatos">
+        <a href="https://www.linkedin.com/in/gabriel-dias-90b842314?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>GABRIEL.EXE // P1 — Ficha de Herói</p>
+    <a href="#inicio">Voltar ao topo</a>
+  </footer>
+</body>
+</html>
